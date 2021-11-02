@@ -2,7 +2,10 @@ from aiogram import types
 # from aiogram.dispatcher.filters.builtin import
 
 from loader import dp
-import pyowm
+try:
+    import pyowm
+except:
+    from PIL import pyowm
 from pyowm.utils.config import get_default_config
 
 # from aiogram.dispatcher import Dispatcher
